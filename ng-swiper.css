@@ -8,6 +8,11 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     width: 100%;
     z-index: 1
 }
@@ -17,6 +22,8 @@
     -ms-box-sizing: content-box;
     -o-box-sizing: content-box;
     box-sizing: content-box;
+    height: 100%;
+    list-style: none;
     -webkit-transform: translate3d(0px, 0, 0);
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -32,11 +39,17 @@
     -ms-transition-duration: 0s;
     -o-transition-duration: 0s;
     transition-duration: 0s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     -webkit-transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -ms-transition-timing-function: ease;
     -o-transition-timing-function: ease;
-    transition-timing-function: ease
+    transition-timing-function: ease;
+    width: 100%
 }
 .swiper-container>.swiper-wrapper>.swiper-slide {
     height: 100%;
@@ -68,6 +81,7 @@
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
     height: 100%;
+    overflow: hidden;
     position: relative;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -92,7 +106,7 @@
     width: 100%
 }
 .swiper-container>.swiper-pagination>.swiper-pagination-switch {
-    background-color: #b7be9e;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
@@ -103,13 +117,11 @@
 .swiper-container>.swiper-pagination>.swiper-active-switch {
     background-color: #fff
 }
-.swiper-container.swiper-free-mode>.swiper-wrapper {
-    margin: 0 auto;
-    -webkit-transition-timing-function: ease-out;
-    -moz-transition-timing-function: ease-out;
-    -ms-transition-timing-function: ease-out;
-    -o-transition-timing-function: ease-out;
-    transition-timing-function: ease-out
+.swiper-container.scroll-v>.swiper-wrapper>.swiper-slide {
+    height: auto
+}
+.swiper-container.scroll-h>.swiper-wrapper>.swiper-slide {
+    width: auto
 }
 .swiper-container .swiper-scrollbar {
     background-color: transparent;

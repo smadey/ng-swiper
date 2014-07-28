@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+
+    <link rel="stylesheet" href="../ng-swiper.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .swiper-container {
+            height: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 480px;
+        }
+
+        .swiper-container.translateZ {
+            -webkit-perspective: 1200;
+            perspective: 1200;
+        }
+        .swiper-free-mode {
+            background-color: rgba(0, 0, 0, .15);
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .flip-item {
+            height: 100%;
+            width: 100%;
+        }
+        .scroll-item {
+            padding: 20px;
+        }
+    </style>
+    <script data-main="main" src="lib/require.js"></script>
+</head>
+
+<body>
+    <div ui-view></div>
+</body>
+
+</html>
